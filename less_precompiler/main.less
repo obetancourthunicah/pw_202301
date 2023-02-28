@@ -5,7 +5,28 @@ body{
   background-color: @primary-bg-color;
   color: @primary-text-color;
 }
-
+.p1{
+  padding: 1rem;
+}
+.py1{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.px1{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.p2{
+  padding: 2rem;
+}
+.py2{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.px2{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .shadow-d1{
   box-shadow: 0 1px 1px 0 fade(@secondary-bg-color, 88%), 0 1px 1px -1px fade(@secondary-bg-color, 88%), 0 1px 3px 0 fade(@secondary-bg-color, 88%);
   border:none;
@@ -17,5 +38,6 @@ body{
 }
 
 .container {
+  .p1();
   .shadow-d1();
 }
