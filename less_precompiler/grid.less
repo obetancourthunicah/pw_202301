@@ -1,0 +1,42 @@
+.grid {
+  display:flex;
+  flex-flow:row wrap; /*flex-direction:row; flex-wrap:wrap;*/
+  justify-content:flex-start;
+  width:100%;
+  [class*="col-"]{
+    padding: 0.5rem 1rem;
+    margin: 0px;
+  }
+}
+
+.row {
+  width:100%;
+  flex-flow: row, wrap;
+  &.reverse{
+    flex-direction:row-reverse;
+  }
+  &.alert{
+    background-color: red;
+  }
+  &.success{
+    background-color: green;
+  }
+  &.warning{
+    background-color: yellow;
+  }
+  &.info{
+    background-color: blue;
+  }
+  .column{
+    flex-direction: column;
+    &.reverse{
+      flex-direction:column-reverse;
+    }
+    @media @sm{
+      /*.generateCols(12, e(''))*/
+      .container{
+        width: 100%;
+      }
+    }
+  }
+}

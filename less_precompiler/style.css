@@ -1,0 +1,67 @@
+/* e("Literal con @{nombreVariable}");  --> Definicion de Literal Text con Iterpolación */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #86ffbe;
+  color: #000;
+}
+.shadow-d1 {
+  box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.88), 0 1px 1px -1px rgba(51, 51, 51, 0.88), 0 1px 3px 0 rgba(51, 51, 51, 0.88);
+  border: none;
+  border-radius: 23px;
+}
+.card {
+  box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.88), 0 1px 1px -1px rgba(51, 51, 51, 0.88), 0 1px 3px 0 rgba(51, 51, 51, 0.88);
+  border: none;
+  border-radius: 23px;
+}
+.container {
+  box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.88), 0 1px 1px -1px rgba(51, 51, 51, 0.88), 0 1px 3px 0 rgba(51, 51, 51, 0.88);
+  border: none;
+  border-radius: 23px;
+}
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  /*flex-direction:row; flex-wrap:wrap;*/
+  justify-content: flex-start;
+  width: 100%;
+}
+.grid [class*="col-"] {
+  padding: 0.5rem 1rem;
+  margin: 0px;
+}
+.row {
+  width: 100%;
+  flex-flow: row, wrap;
+}
+.row.reverse {
+  flex-direction: row-reverse;
+}
+.row.alert {
+  background-color: red;
+}
+.row.success {
+  background-color: green;
+}
+.row.warning {
+  background-color: yellow;
+}
+.row.info {
+  background-color: blue;
+}
+.row .column {
+  flex-direction: column;
+}
+.row .column.reverse {
+  flex-direction: column-reverse;
+}
+@media (max-width:568px) {
+  .row .column {
+    /*.generateCols(12, e(''))*/
+  }
+  .row .column .container {
+    width: 100%;
+  }
+}

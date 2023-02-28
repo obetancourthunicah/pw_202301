@@ -1,0 +1,116 @@
+/*
+Desktop First - layout para resoluciones altas
+Desktop > Tabletas > Mobiles
+
+Mobile First 
+Mobile > Tablets > Desktop > large desktops | TV 
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  padding:0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:16px;
+  font-size:100%;
+  font-size:1em;
+}
+
+header nav ul{
+  list-style: none;
+  padding:0px;
+  margin:0px;
+  background-color:#333;
+  box-shadow: 0px 3px 5px 3px #333;
+}
+header nav ul li a {
+  display:block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  color:#fff;
+}
+main {
+  padding:0.5rem 1rem;
+}
+
+.card {
+  max-width:340px;
+  border: solid 1px #333;
+  margin: 0.75rem auto;
+  padding:0.25rem;
+  box-shadow: 1px 1px 3px #333;
+  border-radius: 3px;
+  transition: margin 1s ease;
+}
+.image img{
+  width:100%;
+}
+.action a {
+  display: inline-block;
+  padding: 0.75rem;
+  border-radius: 23px;
+  text-decoration: none;
+  background-color: #0c24b1;
+  color: #FFF;
+  box-shadow: 1px 1px 2px #333;
+}
+
+.price {
+  font-size:1.8rem;
+  font-weight: bolder;
+}
+.actions {
+  display: flex;
+  padding:0.25rem;
+  align-items:center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+@media screen and (min-width:720px) {
+  /*Tablets Rules */
+  header nav ul{
+    background-color: darkgreen;
+    display:flex;
+    justify-content: center;
+  }
+
+  .cardContainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    max-width:700px;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  /*Desktop Rules*/
+  header nav ul{
+    background-color: #13012f;
+    justify-content: flex-end;
+    padding-right:1rem;
+  }
+
+  .cardContainer{
+    max-width:calc(356px * 3);
+  }
+  .card {
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  /*Extra Large Desktop*/
+  header nav ul{
+    background-color: #071b04;
+    max-width:1200px;
+    margin: 0px auto;
+  }
+  main {
+    max-width:1200px;
+    margin: 0px auto;
+  }
+}

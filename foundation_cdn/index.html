@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation Intro</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"
+    crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      $(document).foundation();
+    });
+  </script>
+  <style>
+    .borders div {
+      box-shadow: 0 0 2px #aaa;
+    }
+
+    .mywidth {
+      width: 300px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Hola Mundo</h1>
+  <ul class="tabs" data-tabs id="example-tabs">
+    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+    <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Tab 2</a></li>
+    <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">Tab 3</a></li>
+    <li class="tabs-title"><a data-tabs-target="panel4" href="#panel4">Tab 4</a></li>
+    <li class="tabs-title"><a data-tabs-target="panel5" href="#panel5">Tab 5</a></li>
+  </ul>
+  <div class="tabs-content" data-tabs-content="example-tabs">
+    <div class="tabs-panel is-active" id="panel1">
+      <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh
+        porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse
+        dictum feugiat nisl ut dapibus.</p>
+    </div>
+    <div class="tabs-panel" id="panel2">
+      <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla
+        enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Sed auctor neque eu tellus rhoncus ut
+        eleifend nibh porttitor.</p>
+    </div>
+    <div class="tabs-panel" id="panel3">
+      <table>
+        <thead>
+          <tr>
+            <th width="200">Table Header</th>
+            <th>Table Header</th>
+            <th width="150">Table Header</th>
+            <th width="150">Table Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tabs-panel borders" id="panel4">
+      <div class="grid-x">
+        <div class="cell">full width cell</div>
+        <div class="cell">full width cell</div>
+      </div>
+      <div class="grid-x">
+        <div class="cell small-6">6 cells</div>
+        <div class="cell small-6">6 cells</div>
+      </div>
+      <div class="grid-x">
+        <div class="cell medium-6 large-4">12/6/4 cells</div>
+        <div class="cell medium-6 large-8">12/6/8 cells</div>
+      </div>
+    </div>
+    <div class="tabs-panel" id="panel5">
+      <div class="grid-x grid-padding-x grid-padding-y">
+        <div class="card medium-6 large-4">
+          <div class="card-divider">Ejemplo de Tarjeta</div>
+          <img
+            src="https://images.unsplash.com/photo-1568641276588-24bde16f4720?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfGlVSXNuVnRqQjBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=100&q=60"
+            alt="imagen de productos">
+          <div class="card-section">Parrafo para la tarjeta</div>
+        </div>
+        <div class="card medium-6 large-4">
+          <div class="card-divider">Ejemplo de Tarjeta</div>
+          <img
+            src="https://images.unsplash.com/photo-1568641276588-24bde16f4720?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfGlVSXNuVnRqQjBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=100&q=60"
+            alt="imagen de productos">
+          <div class="card-section">Parrafo para la tarjeta</div>
+        </div>
+        <div class="card medium-6 large-4">
+          <div class="card-divider">Ejemplo de Tarjeta</div>
+          <img
+            src="https://images.unsplash.com/photo-1568641276588-24bde16f4720?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfGlVSXNuVnRqQjBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=100&q=60"
+            alt="imagen de productos">
+          <div class="card-section">Parrafo para la tarjeta</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
