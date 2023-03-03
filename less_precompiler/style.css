@@ -1,9 +1,20 @@
-/* e("Literal con @{nombreVariable}");  --> Definicion de Literal Text con Iterpolación */
+/* e("Literal con @{nombreVariable}");
+--> Definición de
+Literal Text con Interpolación */
 * {
   box-sizing: border-box;
 }
 body {
-  background-color: #86ffbe;
+  background-color: #1565c0;
+  color: #FFF;
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  background-color: #fff;
   color: #000;
 }
 .p1 {
@@ -29,20 +40,20 @@ body {
   padding-right: 2rem;
 }
 .shadow-d1 {
-  box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.88), 0 1px 1px -1px rgba(51, 51, 51, 0.88), 0 1px 3px 0 rgba(51, 51, 51, 0.88);
-  border: none;
-  border-radius: 23px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.88), 0 2px 2px -2px rgba(0, 0, 0, 0.88), 0 2px 2px 0 rgba(0, 0, 0, 0.88);
+}
+.shadow-d2 {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.88), 0 4px 4px -4px rgba(0, 0, 0, 0.88), 0 4px 4px 0 rgba(0, 0, 0, 0.88);
+}
+.shadow-d3 {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.88), 0 8px 8px -8px rgba(0, 0, 0, 0.88), 0 8px 8px 0 rgba(0, 0, 0, 0.88);
 }
 .card {
-  box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.88), 0 1px 1px -1px rgba(51, 51, 51, 0.88), 0 1px 3px 0 rgba(51, 51, 51, 0.88);
-  border: none;
-  border-radius: 23px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.88), 0 2px 2px -2px rgba(0, 0, 0, 0.88), 0 2px 2px 0 rgba(0, 0, 0, 0.88);
 }
 .container {
   padding: 1rem;
-  box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.88), 0 1px 1px -1px rgba(51, 51, 51, 0.88), 0 1px 3px 0 rgba(51, 51, 51, 0.88);
-  border: none;
-  border-radius: 23px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.88), 0 2px 2px -2px rgba(0, 0, 0, 0.88), 0 2px 2px 0 rgba(0, 0, 0, 0.88);
 }
 /*
 col-1
@@ -98,86 +109,6 @@ col-xl-3
 }
 .row.info {
   background-color: blue;
-}
-.row .col-12 {
-  flex-basis: 100%;
-  max-width: 100%;
-}
-.row .offset-12 {
-  margin-left: 100% !important;
-}
-.row .order-12 {
-  order: 12;
-}
-.row .col-11 {
-  flex-basis: 91.66666666666667%;
-  max-width: 91.66666666666667%;
-}
-.row .offset-11 {
-  margin-left: 91.66666666666667% !important;
-}
-.row .order-11 {
-  order: 11;
-}
-.row .col-10 {
-  flex-basis: 83.33333333333334%;
-  max-width: 83.33333333333334%;
-}
-.row .offset-10 {
-  margin-left: 83.33333333333334% !important;
-}
-.row .order-10 {
-  order: 10;
-}
-.row .col-9 {
-  flex-basis: 75%;
-  max-width: 75%;
-}
-.row .offset-9 {
-  margin-left: 75% !important;
-}
-.row .order-9 {
-  order: 9;
-}
-.row .col-8 {
-  flex-basis: 66.66666666666667%;
-  max-width: 66.66666666666667%;
-}
-.row .offset-8 {
-  margin-left: 66.66666666666667% !important;
-}
-.row .order-8 {
-  order: 8;
-}
-.row .col-7 {
-  flex-basis: 58.333333333333336%;
-  max-width: 58.333333333333336%;
-}
-.row .offset-7 {
-  margin-left: 58.333333333333336% !important;
-}
-.row .order-7 {
-  order: 7;
-}
-.row .col-6 {
-  flex-basis: 50%;
-  max-width: 50%;
-}
-.row .offset-6 {
-  margin-left: 50% !important;
-}
-.row .order-6 {
-  order: 6;
-}
-.row .col-5 {
-  flex-basis: 41.66666666666667%;
-  max-width: 41.66666666666667%;
-}
-.row .offset-5 {
-  margin-left: 41.66666666666667% !important;
-}
-.row .order-5 {
-  order: 5;
 }
 .row .col-4 {
   flex-basis: 33.333333333333336%;
@@ -340,4 +271,163 @@ col-xl-3
   .row .order-md-1 {
     order: 1;
   }
+}
+@media (min-width:1024px) {
+  .row .col-lg-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .row .offset-lg-12 {
+    margin-left: 100% !important;
+  }
+  .row .order-lg-12 {
+    order: 12;
+  }
+  .row .col-lg-11 {
+    flex-basis: 91.66666666666667%;
+    max-width: 91.66666666666667%;
+  }
+  .row .offset-lg-11 {
+    margin-left: 91.66666666666667% !important;
+  }
+  .row .order-lg-11 {
+    order: 11;
+  }
+  .row .col-lg-10 {
+    flex-basis: 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+  .row .offset-lg-10 {
+    margin-left: 83.33333333333334% !important;
+  }
+  .row .order-lg-10 {
+    order: 10;
+  }
+  .row .col-lg-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+  .row .offset-lg-9 {
+    margin-left: 75% !important;
+  }
+  .row .order-lg-9 {
+    order: 9;
+  }
+  .row .col-lg-8 {
+    flex-basis: 66.66666666666667%;
+    max-width: 66.66666666666667%;
+  }
+  .row .offset-lg-8 {
+    margin-left: 66.66666666666667% !important;
+  }
+  .row .order-lg-8 {
+    order: 8;
+  }
+  .row .col-lg-7 {
+    flex-basis: 58.333333333333336%;
+    max-width: 58.333333333333336%;
+  }
+  .row .offset-lg-7 {
+    margin-left: 58.333333333333336% !important;
+  }
+  .row .order-lg-7 {
+    order: 7;
+  }
+  .row .col-lg-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .row .offset-lg-6 {
+    margin-left: 50% !important;
+  }
+  .row .order-lg-6 {
+    order: 6;
+  }
+  .row .col-lg-5 {
+    flex-basis: 41.66666666666667%;
+    max-width: 41.66666666666667%;
+  }
+  .row .offset-lg-5 {
+    margin-left: 41.66666666666667% !important;
+  }
+  .row .order-lg-5 {
+    order: 5;
+  }
+  .row .col-lg-4 {
+    flex-basis: 33.333333333333336%;
+    max-width: 33.333333333333336%;
+  }
+  .row .offset-lg-4 {
+    margin-left: 33.333333333333336% !important;
+  }
+  .row .order-lg-4 {
+    order: 4;
+  }
+  .row .col-lg-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  .row .offset-lg-3 {
+    margin-left: 25% !important;
+  }
+  .row .order-lg-3 {
+    order: 3;
+  }
+  .row .col-lg-2 {
+    flex-basis: 16.666666666666668%;
+    max-width: 16.666666666666668%;
+  }
+  .row .offset-lg-2 {
+    margin-left: 16.666666666666668% !important;
+  }
+  .row .order-lg-2 {
+    order: 2;
+  }
+  .row .col-lg-1 {
+    flex-basis: 8.333333333333334%;
+    max-width: 8.333333333333334%;
+  }
+  .row .offset-lg-1 {
+    margin-left: 8.333333333333334% !important;
+  }
+  .row .order-lg-1 {
+    order: 1;
+  }
+}
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.88), 0 4px 4px -4px rgba(0, 0, 0, 0.88), 0 4px 4px 0 rgba(0, 0, 0, 0.88);
+  z-index: 1000;
+}
+header h1 {
+  margin: 0;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li a {
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #FFF;
+}
+footer {
+  position: absolute;
+  background-color: #1565c0;
+  color: #FFF;
+  padding: 1rem;
+  text-align: center;
+  bottom: 0px;
+  width: 100%;
 }

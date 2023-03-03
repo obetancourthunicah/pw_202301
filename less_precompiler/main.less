@@ -4,6 +4,15 @@
 body{
   background-color: @primary-bg-color;
   color: @primary-text-color;
+  margin:0;
+}
+main {
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width:100%;
+  background-color: #fff;
+  color: @secondary-text-color;
 }
 .p1{
   padding: 1rem;
@@ -28,9 +37,13 @@ body{
   padding-right: 2rem;
 }
 .shadow-d1{
-  box-shadow: 0 1px 1px 0 fade(@secondary-bg-color, 88%), 0 1px 1px -1px fade(@secondary-bg-color, 88%), 0 1px 3px 0 fade(@secondary-bg-color, 88%);
-  border:none;
-  border-radius: 23px;
+  box-shadow: 0 2px 2px 0 fade(@secondary-text-color, 88%), 0 2px 2px -2px fade(@secondary-text-color, 88%), 0 2px 2px 0 fade(@secondary-text-color, 88%);
+}
+.shadow-d2{
+  box-shadow: 0 4px 4px 0 fade(@secondary-text-color, 88%), 0 4px 4px -4px fade(@secondary-text-color, 88%), 0 4px 4px 0 fade(@secondary-text-color, 88%);
+}
+.shadow-d3{
+  box-shadow: 0 8px 8px 0 fade(@secondary-text-color, 88%), 0 8px 8px -8px fade(@secondary-text-color, 88%), 0 8px 8px 0 fade(@secondary-text-color, 88%);
 }
 
 .card {
