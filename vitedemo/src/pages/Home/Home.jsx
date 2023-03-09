@@ -1,9 +1,9 @@
 const Home = ()=>{
   return (
-    <main>
+    <section>
       <h1>Home</h1>
       <p>Lorem ipsum adatd asdfko asdf sfff</p>
-    </main>
+    </section>
   )
 }
 export default Home;
