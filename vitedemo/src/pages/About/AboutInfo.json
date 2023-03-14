@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Cristian",
+    "apellido": "Gonzalez",
+    "edad": 25,
+    "hobbies": [
+      "programar",
+      "jugar",
+      "ver series"
+    ]
+  },
+  {
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "edad": 30,
+    "hobbies": [
+      "programar",
+      "jugar",
+      "ver series"
+    ]
+  },
+  {
+    "nombre": "Pedro",
+    "apellido": "Gomez",
+    "edad": 35,
+    "hobbies": [
+      "programar",
+      "jugar",
+      "ver series"
+    ]
+  }
+]
