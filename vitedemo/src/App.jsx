@@ -3,6 +3,7 @@ import { useState } from "react";
 import Home from "./pages/Home/Home";
 import Menu from "./components/Menu/Menu";
 import About from "./pages/About/About";
+import { Pokemon } from './pages/Pokemon/Pokemon';
 function App() {
   const [selectedPage, setSelectedPage] = useState("Home");
   const onClickMenuItem = (itemClicked)=>{
@@ -17,6 +18,7 @@ function App() {
           [ "Home",
             "About",
             "Contact",
+            "Pokemon",
             "Sign In",
             "Sign Up",
           ]
@@ -25,6 +27,7 @@ function App() {
       <hr />
       {("Home" === selectedPage)?<Home />: null}
       {("About"=== selectedPage)?<About />: null}
+      {("Pokemon" === selectedPage)?<Pokemon />:null}
     </section>
   );
 }
