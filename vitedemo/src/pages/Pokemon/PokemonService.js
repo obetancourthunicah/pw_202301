@@ -7,6 +7,7 @@ export const getPokemonCards = async (page) => {
 	}
 };
 try {
+  console.log(page);
   const url = page !== ""?
     `https://pokemon-tcg-card-prices.p.rapidapi.com/card?setId=33ee55f4-30d0-4900-850f-36a351fb9719&set=vivid-voltage&series=sword-and-shield&limit=25&fromId=${page}`:
     'https://pokemon-tcg-card-prices.p.rapidapi.com/card?setId=33ee55f4-30d0-4900-850f-36a351fb9719&set=vivid-voltage&series=sword-and-shield&limit=25';

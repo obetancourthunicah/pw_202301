@@ -10,10 +10,13 @@ export const Pokemon = () => {
   useEffect(
     ()=>{
       setServiceState('loading');
+      console.log('page', page);
       getPokemonCards(page).then(
         (pokeCardsApi)=>{
+          console.log('pokeCardsApi', pokeCardsApi);
           setServiceState('loaded');
-          setPokeCards([...pokeCards, ...pokeCardsApi.results]);
+          const newPokemonCards = new Set([...pokeCards, ...pokeCardsApi.results].map(o=>JSON.stringify(o)));
+          setPokeCards(Array.from(newPokemonCards).map(o=>JSON.parse(o)));
         }
       ).catch(()=>{
         setServiceState('hasErrors');
@@ -22,12 +25,18 @@ export const Pokemon = () => {
     }
     , [page]
   );
-
+  const clickHandler = (e)=>{
+    e.preventDefault();
+    e.stopPropagation();
+    console.log('clickHandler', pokeCards[pokeCards.length-1].cardId);
+    const newPage = pokeCards[pokeCards.length-1].cardId;
+    setPage(newPage);
+  }
   return (
     <div>
       Service {serviceState}
       <br />
-      Error {serviceError}
+      {serviceError && serviceState !== 'loading' &&  `Error ${serviceError}`}
       <br />
       <hr />
       <ol>
@@ -36,8 +45,8 @@ export const Pokemon = () => {
           <li key={o.cardId}>{o.cardNumber} - {o.name} - {o.superType}</li>
         );
       })}
-      <a onClick={()=>{setPage(pokeCards[pokeCards.length-1].cardId)}} >Next</a>
       </ol>
+      <a onClick={clickHandler} >Next</a>
     </div>
   );
 };
